@@ -306,13 +306,13 @@ const IndexPage = ({ circuit, database, openAction }) => {
             <h3>Web</h3>
             <ul>
                 <li>JavaScript frameworks and libraries: ReactJS, jQuery (advanced).</li>
-                <li>CSS frameworks: Bootstrap, Flexbox grid, Spectre.css (advanced).</li>
+                <li>CSS frameworks: Bootstrap, Spectre.css, Flexbox grid (intermediate).</li>
             </ul>
 
             <h3>Mobile</h3>
             <ul>
-                <li>iOS applications using Cocoa and Swift (intermediate).</li>
-                <li>Android applications in Java (basic).</li>
+                <li>iOS development using Cocoa and Swift (intermediate).</li>
+                <li>Android development in Java (basic).</li>
             </ul>
 
             <h3>Desktop</h3>
@@ -323,7 +323,7 @@ const IndexPage = ({ circuit, database, openAction }) => {
             <h3>Cloud</h3>
             <ul>
                 <li>Backend frameworks: Ruby on Rails, NodeJS (advanced), ASP.NET MVC (basic).</li>
-                <li>Databases: PostgreSQL, SQLite, MongoDB (advanced), Elasticsearch, InfluxDB (intermediate).</li>
+                <li>Databases: PostgreSQL, SQLite, MongoDB (advanced), Elasticsearch, InfluxDB (basic).</li>
                 <li>Machine learning in Python using SciPy, NumPy and Pandas (advanced).</li>
             </ul>
 

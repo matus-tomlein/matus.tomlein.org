@@ -1,6 +1,7 @@
 const React = require('react'),
 
     Abstract = require('./Abstract'),
+    PortfolioSection = require('./PortfolioSection'),
 
     Link = require('react-router-dom').Link;
 
@@ -123,6 +124,7 @@ const IndexPage = ({ circuit, database, openAction }) => {
                 <li><a href='#education'>Education</a></li>
                 <li><a href='#work'>Work Experience</a></li>
                 <li><a href='#publications'>Research Publications</a></li>
+                <li><a href='#portfolio'>Portfolio</a></li>
                 <li><a href='#skills'>Technical Skills</a></li>
                 <li><a href='#awards'>Competitions, Awards and Interests</a></li>
             </ul>
@@ -198,10 +200,11 @@ const IndexPage = ({ circuit, database, openAction }) => {
                 school='Slovak University of Technology'>
                 <p>
                     In my bachelor project, I worked in a team of four students on a proxy
-                    application, <a href='http://ownet.fiit.stuba.sk'>OwNet</a> that
-                    helped schools with slow and intermittent Intrnet connection make Internet more accessible.
+                    application, <a href='http://ownet.fiit.stuba.sk'>OwNet</a>.
+                    OwNet enabled schools with slow and intermittent Intrnet connection make Internet more
+                    usable for students.
                     We competed in the <a href='https://imagine.microsoft.com/compete'>Microsoft Imagine
-                    Cup</a> competition, where we advanced to finals in Sydney.
+                    Cup</a> competition and advanced to the finals in Sydney.
                 </p>
             </EducationItem>
 
@@ -293,6 +296,11 @@ const IndexPage = ({ circuit, database, openAction }) => {
                 />
 
         </section>
+
+        <PortfolioSection>
+            <a name="portfolio"></a>
+            <h2>Portfolio</h2>
+        </PortfolioSection>
 
         <section>
             <a name="skills"></a>

@@ -5,6 +5,7 @@ const React = require('react'),
     IndexPage = require('./IndexPage'),
     PhdVideosPage = require('./PhDVideosPage'),
     CVPage = require('./CVPage'),
+    PortfolioPage = require('./PortfolioPage'),
 
     BrowserRouter = require('react-router-dom').BrowserRouter,
     Switch = require('react-router-dom').Switch,
@@ -26,6 +27,7 @@ const Application = () => {
             <Route path='/phd/videos' component={PhdVideosPage} />
             <Route path='/phd' component={PhdVideosPage} />
             <Route path='/cv' component={CVPage} />
+            <Route path='/portfolio' component={PortfolioPage} />
             <Route path='/' component={IndexPage} />
 
             <Route path='*' component={NoMatch} />

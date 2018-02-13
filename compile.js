@@ -2,9 +2,10 @@ var fs = require('fs');
 var browserify = require('browserify');
 var watchify = require('watchify');
 
-var b = browserify({ debug: true })
+var b = browserify({ debug: false })
     .add('./app/index.js')
     .transform('babelify', { presets: ['es2015', 'react'] })
+    .transform('uglifyify', { global: true })
     .plugin(watchify)
     .on('update', bundle);
 

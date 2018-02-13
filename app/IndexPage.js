@@ -32,7 +32,7 @@ class EmailLink extends React.Component {
 const IndexPage = ({ circuit, database, openAction }) => {
     return <article>
         <figure>
-            <img src="/images/banner" />
+            <img src="/images/banner.jpg" />
         </figure>
 
         <h1>

@@ -10,6 +10,7 @@ const ARModelingPaperPage = ({ circuit, database, openAction }) => {
         </h1>
         <p class="subtitle">
             <Link to='/'>Matúš Tomlein</Link>,
+            {' '}
             <a href='http://www.gronbak.dk/kgronbak/'>Kaj Grønbæk</a>
         </p>
 

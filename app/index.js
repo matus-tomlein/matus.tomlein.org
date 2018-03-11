@@ -6,6 +6,7 @@ const React = require('react'),
     PhdVideosPage = require('./PhDVideosPage'),
     CVPage = require('./CVPage'),
     PortfolioPage = require('./PortfolioPage'),
+    ARModelingPaperPage = require('./ARModelingPaperPage'),
 
     BrowserRouter = require('react-router-dom').BrowserRouter,
     Switch = require('react-router-dom').Switch,
@@ -28,6 +29,7 @@ const Application = () => {
             <Route path='/phd' component={PhdVideosPage} />
             <Route path='/cv' component={CVPage} />
             <Route path='/portfolio' component={PortfolioPage} />
+            <Route path='/papers/ar_modeling' component={ARModelingPaperPage} />
             <Route path='/' component={IndexPage} />
 
             <Route path='*' component={NoMatch} />

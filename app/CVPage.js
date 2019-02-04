@@ -214,6 +214,21 @@ const IndexPage = ({ circuit, database, openAction }) => {
             <a name="work"></a>
             <h2>Work Experience</h2>
 
+            <Job from='March 2018' until='present' i={-1}
+                website='https://pygmalios.com'
+                position='Data Science Engineer'
+                business='Retail analytics'
+                company='Pygmalios'>
+                <p>
+                  Heading Data Science efforts at Pygmalios.
+                  Main responsibility in ensuring quality of sensor data
+                  from physical retail stores by building tools for anomaly detection
+                  and improving internal data-processing pipelines.
+                  Also involved in analysis, design and implementation of new
+                  data-driven product features.
+                </p>
+            </Job>
+
             <Job from={2009} until='present' i={0}
                 website='https://szchkt.org'
                 position='Web developer'
@@ -249,6 +264,15 @@ const IndexPage = ({ circuit, database, openAction }) => {
         <section>
             <a name="publications"></a>
             <h2>Research Publications</h2>
+
+            <Publication i={5}
+                title='Augmented Reality Supported Modeling of Industrial Systems to Infer Software Configuration'
+                authors='Matúš Tomlein, Kaj Grønbæk'
+                venue='PACM-HCI, EICS'
+                published='June 2018'
+                link='https://dl.acm.org/citation.cfm?id=3229087'
+                abstract="This paper proposes and evaluates an approach for building models of installed industrial Cyber-Physical Systems using augmented reality on smartphones. It proposes a visual language for annotating devices, containers, flows of liquids and networking connections in augmented reality. Compared to related work, it provides a more lightweight and flexible approach for building 3D models of industrial systems. The models are further used to automatically infer software configuration of controllable industrial products. This addresses a common problem of error-prone and time-consuming configuration of industrial systems in the current practice. The proposed approach is evaluated in a study with 16 domain experts. The study participants are involved in creating a model of an industrial system for water treatment. Their comments show that the approach can enable a less error-prone configuration for more complex systems. Opportunities for improvement in usability and reflections on the potential of the approach are discussed."
+                />
 
             <Publication i={0}
                 title='A Visual Programming Approach Based on Domain Ontologies for Conﬁguring Industrial IoT Installations'

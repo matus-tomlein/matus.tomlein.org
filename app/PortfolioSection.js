@@ -38,7 +38,7 @@ const Project = ({ figure, title, link, children }) => {
         </div>
 
         <div class='col-xs-12 col-sm-12 col-md-7 col-lg-7'>
-            <h3>{title}</h3>
+            <h3 style={{ 'margin-top': '0px' }}>{title}</h3>
             {children}
         </div>
     </React.Fragment>;
@@ -54,6 +54,16 @@ const PortfolioSection = ({ circuit, database, children, openAction }) => {
 
         <p>
             <div class='row'>
+                <Project title='Seelog' link='https://seelog.app'
+                    figure={<img src='/images/seelog-banner.jpg' width='100%' alt='Seelog' />}>
+                    <p>
+                      Seelog is an iOS app that reports statistics about users'
+                      travels and places they’ve seen.
+                      It uses geotagged photos from iOS photo library to calculate
+                      the statistics and doesn’t require any manual input or tracking.
+                      It reports on visited continents, countries, cities, timezones, and more.
+                    </p>
+                </Project>
 
                 <Project title='Augmented Reality System Models'
                     figure={<VideoFigure img='/images/ar-app.jpg' video='https://f001.backblazeb2.com/file/phd-public/ar_modeling_app.mp4' />}>

@@ -2,6 +2,10 @@ php_flag magic_quotes_gpc Off
 php_value max_input_vars 100000
 RewriteEngine on
 
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d [OR]
 RewriteCond %{REQUEST_FILENAME}/index.php !-f

@@ -11,7 +11,7 @@ const EducationItem = ({ from, until, degree, school, department, link, supervis
         <h3>
             {degree} at <a href={link}>{school}</a>
             {' '}
-            <label for={'mn-edu-' + i} className="margin-toggle">⊕</label>
+            <label htmlFor={'mn-edu-' + i} className="margin-toggle">⊕</label>
         </h3>
         <p>
             <input type="checkbox" id={'mn-edu-' + i} className="margin-toggle" />
@@ -31,7 +31,7 @@ const Job = ({ from, until, position, company, website, business, children, i })
         <h3>
             {position} at <a href={website}>{company}</a>
             {' '}
-            <label for={'mn-job-' + i} className="margin-toggle">⊕</label>
+            <label htmlFor={'mn-job-' + i} className="margin-toggle">⊕</label>
         </h3>
         <p>
             <input type="checkbox" id={'mn-job-' + i} className="margin-toggle" />
@@ -75,7 +75,7 @@ class Publication extends React.Component {
             <h3>
                 <a href={this.props.link}>{this.props.title}</a>
                 {' '}
-                <label for={'mn-pub-' + this.props.i} className="margin-toggle">⊕</label>
+                <label htmlFor={'mn-pub-' + this.props.i} className="margin-toggle">⊕</label>
             </h3>
             <h4>{this.props.authors}</h4>
             <p>
@@ -92,20 +92,20 @@ class Publication extends React.Component {
     }
 }
 
-const IndexPage = ({ circuit, database, openAction }) => {
+const IndexPage = () => {
     return <article>
         <h1>
             <Link to='/'>Matúš Tomlein</Link>
         </h1>
-        <p class="subtitle">
+        <p className="subtitle">
             Curriculum Vitae
             {' '}
-            <label for="mn-demo" class="margin-toggle">⊕</label>
+            <label htmlFor="mn-demo" className="margin-toggle">⊕</label>
         </p>
         <section>
             <p>
-                <input type="checkbox" id="mn-demo" class="margin-toggle" />
-                <span class="marginnote">
+                <input type="checkbox" id="mn-demo" className="margin-toggle" />
+                <span className="marginnote">
                     <img src="/images/profile.jpg" style={{'width': '200px'}} alt="Me" /><br />
                     <i>Date of birth:</i> 7 April 1991<br />
                     <i>Sex:</i> Male<br />
@@ -381,7 +381,7 @@ const IndexPage = ({ circuit, database, openAction }) => {
             </p>
             <ul>
                 <li>Best Student Paper Award, IoT Conference, ACM (2017).</li>
-                <li>Dean's award, Faculty of Informatics and Information Technologies STU in Bratislava (2012).</li>
+                <li>Dean&apos;s award, Faculty of Informatics and Information Technologies STU in Bratislava (2012).</li>
                 <li>Circuits and Systems Society Price, IEEE (2009).</li>
             </ul>
 

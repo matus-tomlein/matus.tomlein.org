@@ -3,7 +3,7 @@ const React = require('react'),
     Link = require('react-router-dom').Link;
 
 
-const ARModelingPaperPage = ({ circuit, database, openAction }) => {
+const ARModelingPaperPage = () => {
     return <article>
         <h1>
             Augmented Reality Supported Modeling of Industrial Systems to Infer Software Configuration

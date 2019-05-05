@@ -1,6 +1,4 @@
-const React = require('react'),
-
-    Link = require('react-router-dom').Link;
+const React = require('react');
 
 
 class VideoFigure extends React.Component {
@@ -21,7 +19,7 @@ class VideoFigure extends React.Component {
             return <video width="100%" controls>
                 <source src={this.props.video} type="video/mp4" />
                 Your browser does not support the video tag.
-            </video>
+            </video>;
         }
 
         return <img onClick={this.open} src={this.props.img} width='100%' style={{cursor: 'pointer'}} />;
@@ -42,9 +40,9 @@ const Project = ({ figure, title, link, children }) => {
             {children}
         </div>
     </React.Fragment>;
-}
+};
 
-const PortfolioSection = ({ circuit, database, children, openAction }) => {
+const PortfolioSection = ({ children }) => {
     return <section>
         {children}
 
@@ -57,7 +55,7 @@ const PortfolioSection = ({ circuit, database, children, openAction }) => {
                 <Project title='Seelog' link='https://seelog.app'
                     figure={<img src='/images/seelog-banner.jpg' width='100%' alt='Seelog' />}>
                     <p>
-                      Seelog is an iOS app that reports statistics about users'
+                      Seelog is an iOS app that reports statistics about users&apos;
                       travels and places they’ve seen.
                       It uses geotagged photos from iOS photo library to calculate
                       the statistics and doesn’t require any manual input or tracking.

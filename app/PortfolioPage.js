@@ -5,7 +5,7 @@ const React = require('react'),
     Link = require('react-router-dom').Link;
 
 
-const PortfolioPage = ({ circuit, database, openAction }) => {
+const PortfolioPage = () => {
     return <article>
         <h1>
             Portfolio

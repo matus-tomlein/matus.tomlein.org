@@ -3,7 +3,7 @@ const React = require('react'),
     Link = require('react-router-dom').Link;
 
 
-const PhDVideosPage = ({ circuit, database, openAction }) => {
+const PhDVideosPage = () => {
     return <article>
         <h1>
             Supplementary Videos for
@@ -63,7 +63,7 @@ const PhDVideosPage = ({ circuit, database, openAction }) => {
             </p>
 
             <figure className="iframe-wrapper">
-                <iframe width="853" height="360" src="https://www.youtube.com/embed/aqbKrrru2co" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                <iframe width="853" height="360" src="https://www.youtube.com/embed/aqbKrrru2co" frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen></iframe>
             </figure>
         </section>
 

@@ -53,6 +53,7 @@ const IndexPage = () => {
             <ul>
                 <li><a href='https://www.instagram.com/matustomlein/'>Instagram</a></li>
                 <li><a href='https://github.com/matus-tomlein/'>GitHub</a></li>
+                <li><a href='https://medium.com/@matus_tomlein'>Medium</a></li>
                 <li><a href='https://twitter.com/matus_tomlein'>Twitter</a></li>
                 <li><a href='https://www.linkedin.com/in/matúš-tomlein-06a3212a/'>LinkedIn</a></li>
                 <li><a href='https://scholar.google.com/citations?user=r1VDrPMAAAAJ&hl=en&oi=ao'>Google Scholar</a></li>

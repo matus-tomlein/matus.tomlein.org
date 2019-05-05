@@ -23,7 +23,7 @@ class EmailLink extends React.Component {
             return <a href='mailto:matus@tomlein.org'>matus@tomlein.org</a>;
         }
 
-        return <span style={{ 'text-decoration': 'underline', 'cursor': 'pointer' }} onClick={this.showEmail}>
+        return <span style={{ 'textDecoration': 'underline', 'cursor': 'pointer' }} onClick={this.showEmail}>
             E-mail
         </span>;
     }
@@ -38,7 +38,7 @@ const IndexPage = ({ circuit, database, openAction }) => {
         <h1>
             Matúš Tomlein
         </h1>
-        <p class="subtitle">Software developer and researcher.</p>
+        <p className="subtitle">Software developer and researcher.</p>
 
         <section>
             <Abstract />

@@ -10,7 +10,7 @@ const PhDVideosPage = ({ circuit, database, openAction }) => {
             {' '}
             <a href="http://pure.au.dk/portal/en/persons/matu-tomlein(c55ebaef-7d8f-487b-a1ff-69a83de76746)/publications/contextaware-integrability-and-maintainability-of-cyberphysical-ecosystems(7ffaa36e-673d-4c76-92a7-84d4a8dcfab0).html">PhD Thesis</a>
         </h1>
-        <p class="subtitle"><Link to='/'>Matúš Tomlein</Link></p>
+        <p className="subtitle"><Link to='/'>Matúš Tomlein</Link></p>
 
         <section>
             <p>
@@ -62,7 +62,7 @@ const PhDVideosPage = ({ circuit, database, openAction }) => {
                 To face these problems, I proposed and evaluated a novel transfer learning approach.
             </p>
 
-            <figure class="iframe-wrapper">
+            <figure className="iframe-wrapper">
                 <iframe width="853" height="360" src="https://www.youtube.com/embed/aqbKrrru2co" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
             </figure>
         </section>

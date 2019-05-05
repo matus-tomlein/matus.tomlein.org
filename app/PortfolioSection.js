@@ -33,11 +33,11 @@ const Project = ({ figure, title, link, children }) => {
         title = <a href={link}>{title}</a>;
     }
     return <React.Fragment>
-        <div class='col-xs-12 col-sm-12 col-md-5 col-lg-5'>
+        <div className='col-xs-12 col-sm-12 col-md-5 col-lg-5'>
             {figure}
         </div>
 
-        <div class='col-xs-12 col-sm-12 col-md-7 col-lg-7'>
+        <div className='col-xs-12 col-sm-12 col-md-7 col-lg-7'>
             <h3 style={{ 'margin-top': '0px' }}>{title}</h3>
             {children}
         </div>
@@ -53,7 +53,7 @@ const PortfolioSection = ({ circuit, database, children, openAction }) => {
         </p>
 
         <p>
-            <div class='row'>
+            <div className='row'>
                 <Project title='Seelog' link='https://seelog.app'
                     figure={<img src='/images/seelog-banner.jpg' width='100%' alt='Seelog' />}>
                     <p>

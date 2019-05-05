@@ -10,7 +10,7 @@ const PortfolioPage = ({ circuit, database, openAction }) => {
         <h1>
             Portfolio
         </h1>
-        <p class="subtitle"><Link to='/'>Matúš Tomlein</Link></p>
+        <p className="subtitle"><Link to='/'>Matúš Tomlein</Link></p>
 
         <PortfolioSection />
 

@@ -11,11 +11,11 @@ const EducationItem = ({ from, until, degree, school, department, link, supervis
         <h3>
             {degree} at <a href={link}>{school}</a>
             {' '}
-            <label for={'mn-edu-' + i} class="margin-toggle">⊕</label>
+            <label for={'mn-edu-' + i} className="margin-toggle">⊕</label>
         </h3>
         <p>
-            <input type="checkbox" id={'mn-edu-' + i} class="margin-toggle" />
-            <span class="marginnote">
+            <input type="checkbox" id={'mn-edu-' + i} className="margin-toggle" />
+            <span className="marginnote">
                 {from} – {until}<br />
                 <i>Field:</i> {field}<br />
                 <i>Department:</i> {department}<br />
@@ -31,11 +31,11 @@ const Job = ({ from, until, position, company, website, business, children, i })
         <h3>
             {position} at <a href={website}>{company}</a>
             {' '}
-            <label for={'mn-job-' + i} class="margin-toggle">⊕</label>
+            <label for={'mn-job-' + i} className="margin-toggle">⊕</label>
         </h3>
         <p>
-            <input type="checkbox" id={'mn-job-' + i} class="margin-toggle" />
-            <span class="marginnote">
+            <input type="checkbox" id={'mn-job-' + i} className="margin-toggle" />
+            <span className="marginnote">
                 {from} – {until}<br />
                 <i>Business or sector:</i> {business}
             </span>
@@ -75,12 +75,12 @@ class Publication extends React.Component {
             <h3>
                 <a href={this.props.link}>{this.props.title}</a>
                 {' '}
-                <label for={'mn-pub-' + this.props.i} class="margin-toggle">⊕</label>
+                <label for={'mn-pub-' + this.props.i} className="margin-toggle">⊕</label>
             </h3>
             <h4>{this.props.authors}</h4>
             <p>
-                <input type="checkbox" id={'mn-pub-' + this.props.i} class="margin-toggle" />
-                <span class="marginnote">
+                <input type="checkbox" id={'mn-pub-' + this.props.i} className="margin-toggle" />
+                <span className="marginnote">
                     {this.props.published}<br />
                     <i>Venue:</i> {this.props.venue}
                 </span>

@@ -8,7 +8,7 @@ const ARModelingPaperPage = ({ circuit, database, openAction }) => {
         <h1>
             Augmented Reality Supported Modeling of Industrial Systems to Infer Software Configuration
         </h1>
-        <p class="subtitle">
+        <p className="subtitle">
             <Link to='/'>Matúš Tomlein</Link>,
             {' '}
             <a href='http://www.gronbak.dk/kgronbak/'>Kaj Grønbæk</a>

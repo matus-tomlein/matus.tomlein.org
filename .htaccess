@@ -5,4 +5,4 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d [OR]
 RewriteCond %{REQUEST_FILENAME}/index.php !-f
-RewriteRule ^ index.html [QSA,L]
+RewriteRule ^ index.php [QSA,L]

@@ -10,8 +10,6 @@ header('Content-Type:text/plain; charset=UTF-8');
 
 <?= external_url('/portfolio') ?>
 
-<?= external_url('/') ?>
-
 <?
 $blogs = json_decode(file_get_contents('./api/blogs.json'), true);
 ?>

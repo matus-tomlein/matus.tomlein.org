@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="/styles/tufte.css" />
     <link rel="stylesheet" href="/styles/latex.css" />
     <link rel="stylesheet" href="/styles/flexboxgrid.min.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="/scripts/font-awesome.js"></script>
 </head>
 <body>
 

@@ -1,0 +1,10 @@
+---
+title: Supporting Maintenance Operations for IoT-based Activity Recognition using Transfer Learning
+authors: Matúš Tomlein, Sudershan Boovaraghavan, Yuvraj Agarwal, Anind K. Dey
+venue: Preprint
+published: June 2018
+date: 2018-06-01
+link: /papers/iot-maintenance-transfer-learning.pdf
+---
+
+Activity recognition is inherent to the vision of Internet-of-Things-enabled smart environments and enables end-users to perform activities of interest and have their smart environments respond appropriately. However as smart environments evolve and are expanded over time, the effort that end-users and others put into training their activity recognition models may be wasted, as those models degrade with these evolutions. This paper works on the problem of transferring activity recognition knowledge in the face of different maintenance or expansion operations, such as replacing a sensor or expanding activity recognition to a new room. We work with a novel sensing modality within smart homes, multi-sensor packages, which provide an integrated package that can sense a wide range of activities. Using a data collection from three spaces and 16 activities, we show that the maintenance and expansion operations have a varying effect on the performance of trained activity recognition models and identify a set of factors that influence it. Due to the large variance in performance of transferred models, we focus our contribution on preventing the transfer of models that would perform suboptimally in the changed setting. We propose an algorithm recommendation pipeline that makes use of meta-knowledge from previous maintenance operations to evaluate the transferability of different model representations through several steps. By adapting to different maintenance and expansion operations, the pipeline can save up to 53% of the effort to retrain activity recognition and filter out 94% of transfers with suboptimal performance. The adaptive choice of model representations improves upon using the same model representation by 0.14 F1 score on average.

@@ -1,0 +1,6 @@
+AddDefaultCharset utf-8
+AddType 'application/json; charset=UTF-8' .json
+AddType 'text/markdown; charset=UTF-8' .md
+Header set Cache-Control "no-cache, no-store, must-revalidate"
+Header set Pragma "no-cache"
+Header set Expires 0

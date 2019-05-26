@@ -1,20 +1,23 @@
 const React = require('react'),
 
-    PortfolioSection = require('./PortfolioSection'),
+  PortfolioSection = require('./PortfolioSection'),
+  setTitle = require('./helpers').setTitle,
 
-    Link = require('react-router-dom').Link;
+  Link = require('react-router-dom').Link;
 
 
 const PortfolioPage = () => {
-    return <article>
-        <h1>
-            Portfolio
-        </h1>
-        <p className="subtitle"><Link to='/'>Matúš Tomlein</Link></p>
+  setTitle('Portfolio');
 
-        <PortfolioSection />
+  return <article>
+    <h1>
+      Portfolio
+    </h1>
+    <p className="subtitle"><Link to='/'>Matúš Tomlein</Link></p>
 
-    </article>;
+    <PortfolioSection />
+
+  </article>;
 };
 
 module.exports = PortfolioPage;

@@ -53,7 +53,7 @@ const PortfolioSection = ({ children }) => {
         <p>
             <div className='row'>
                 <Project title='Seelog' link='https://seelog.app'
-                    figure={<img src='/images/seelog-banner.jpg' width='100%' alt='Seelog' />}>
+                    figure={<img src='/images/seelog2-banner-wide.jpeg' width='100%' alt='Seelog' />}>
                     <p>
                       Seelog is an iOS app that reports statistics about users&apos;
                       travels and places they’ve seen.

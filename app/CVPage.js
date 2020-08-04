@@ -326,9 +326,10 @@ const IndexPage = () => {
 
       <h3>Cloud</h3>
       <ul>
-        <li>Backend frameworks: Ruby on Rails, NodeJS (advanced), ASP.NET MVC (basic).</li>
-        <li>Databases: PostgreSQL, SQLite, MongoDB (advanced), Elasticsearch, InfluxDB (basic).</li>
-        <li>Machine learning in Python using SciPy, NumPy and Pandas (advanced).</li>
+        <li>Backend frameworks: Ruby on Rails, NodeJS, Flask (advanced), ASP.NET MVC (basic).</li>
+        <li>Databases: PostgreSQL, SQLite, MongoDB (advanced), Apache Cassandra (intermediate), Elasticsearch, InfluxDB (basic).</li>
+        <li>Machine learning and data transformation in Python using SciPy, NumPy and Pandas (advanced).</li>
+        <li>Distributed data processing using Apache Spark (intermediate).</li>
       </ul>
 
       <h3>Embedded</h3>

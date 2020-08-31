@@ -52,6 +52,7 @@ const PublicationPost = ({ publication }) => {
     <p>
       <input type="checkbox" id={'mn-publication-' + publication.id} className="margin-toggle" />
       <span className="marginnote">
+          {publication.banner ? <img src={'/images/' + publication.banner} /> : null}
           {publication.published}<br />
           <i>Venue:</i> {publication.venue}
       </span>

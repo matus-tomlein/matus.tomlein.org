@@ -241,7 +241,7 @@ const IndexPage = () => {
         </p>
       </Job>
 
-      <Job from='March 2019' until='present' i={-1}
+      <Job from='March 2019' until='August 2020' i={-1}
         website='https://misdeed.fiit.stuba.sk'
         position='Data Scientist'
         business='Research project'

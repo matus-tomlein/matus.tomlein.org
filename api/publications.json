@@ -16,6 +16,7 @@
       "authors": "Matúš Tomlein, Kaj Grønbæk",
       "venue": "PACM-HCI, EICS",
       "published": "June 2018",
+      "banner": "blogs/digital-twins.jpg",
       "date": "2018-06-01",
       "link": "https://dl.acm.org/citation.cfm?id=3229087",
       "abstract": "This paper proposes and evaluates an approach for building models of installed industrial Cyber-Physical Systems using augmented reality on smartphones. It proposes a visual language for annotating devices, containers, flows of liquids and networking connections in augmented reality. Compared to related work, it provides a more lightweight and flexible approach for building 3D models of industrial systems. The models are further used to automatically infer software configuration of controllable industrial products. This addresses a common problem of error-prone and time-consuming configuration of industrial systems in the current practice. The proposed approach is evaluated in a study with 16 domain experts. The study participants are involved in creating a model of an industrial system for water treatment. Their comments show that the approach can enable a less error-prone configuration for more complex systems. Opportunities for improvement in usability and reflections on the potential of the approach are discussed."

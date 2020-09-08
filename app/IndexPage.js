@@ -82,7 +82,7 @@ const IndexPage = () => {
       <Abstract />
 
       <p>
-        <Link to='/cv/'>Read my CV</Link> or <Link to='/portfolio/'>check out my projects.</Link>
+        <Link to='/cv/'>Read my CV</Link> or <Link to='/portfolio/'>check out my projects</Link> to learn more.
       </p>
     </section>
 

@@ -226,6 +226,17 @@ const IndexPage = () => {
       <a name="work"></a>
       <h2>Work Experience</h2>
 
+      <Job from='October 2020' until='present' i={-1}
+        website='https://kinit.sk'
+        position='Senior Researcher'
+        business='Information Processing'
+        company='Kempelen Institute of Intelligent Technologies'>
+        <p>
+          Working in the Information Processing research group on projects
+          dealing with misinformation and online malicious behavior on the Web.
+        </p>
+      </Job>
+
       <Job from='March 2018' until='present' i={-1}
         website='https://pygmalios.com'
         position='Data Science Engineer'

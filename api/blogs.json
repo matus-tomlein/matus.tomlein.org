@@ -1,6 +1,15 @@
 {
   "blogs": [
     {
+      "id": "staff-planning-presentation",
+      "title": "How Digital Twins support processes and decision making within retail",
+      "authors": "Matúš Tomlein",
+      "context": "Pygmalios",
+      "date": "2021-07-14",
+      "banner": "staff-planning-video.jpg",
+      "perex": "I presented at the [Digital Twins Awareness workshop](https://www.comit.org.uk/digitaltwinsawareness) about our thoughts on the Digital Twins concept at Pygmalios. In our view, Digital Twins are virtual representations of physical stores that reflect their current and past events through the use of sensor data. They enable us to model what is going on at retail stores, predict their future state and optimize common processes.\n\nTo illustrate this concept, I explained it on a case that we have been working on for some time – generating optimized employee work schedules. Our solution uses traffic data collected from retail stores, information about employee availability, and common guidelines for workforce management. It applies AI solvers to suggest optimized employee schedules that best reflect the demand for employees while satisfying employee preferences and workforce rules."
+    },
+    {
       "id": "seelog2",
       "title": "Seelog 2: A Redesign Using SwiftUI",
       "authors": "Matúš Tomlein",

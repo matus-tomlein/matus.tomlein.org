@@ -39,7 +39,7 @@ const IndexPage = () => {
 
   return <article>
     <figure>
-      <img src="/images/banner.jpg" />
+      <img src="/images/banner.jpg" style={{ maxWidth: '400px' }} />
     </figure>
 
     <h1>

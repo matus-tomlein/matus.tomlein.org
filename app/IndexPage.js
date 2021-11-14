@@ -47,7 +47,7 @@ const IndexPage = () => {
     </h1>
 
     <p className="subtitle">
-      Software developer and researcher.
+      Software engineer and researcher.
     </p>
 
     <h2>

@@ -9,7 +9,7 @@
 	"author": "Matus Tomlein",
 	"license": "ISC",
 	"dependencies": {
-		"async": "^2.6.0",
+		"async": "^3.2.2",
 		"browserify": "^14.5.0",
 		"html-react-parser": "^0.7.0",
 		"jquery": "^3.2.1",

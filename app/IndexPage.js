@@ -20,8 +20,6 @@ const IndexPage = () => {
       <div className="section-body">
         <p className="lead">I’m a Principal Software Engineer at <a href="https://snowplow.io">Snowplow</a>, where we build tools for collecting and processing behavioral event data.</p>
         <p>My focus is <a href="https://signals.snowplow.io">Signals</a>. It brings live events and warehouse history together into customer profiles that applications and AI agents can use in real time. I’ve been involved from the beginning, helping shape the product and build its core systems.</p>
-        <p className="quiet">Before that: open-source SDKs, analytical applications, retail data science, and a PhD in human-computer interaction and the Internet of Things.</p>
-        <Link className="text-link" to="/cv">More about my background <span aria-hidden="true">↗</span></Link>
       </div>
     </section>
 

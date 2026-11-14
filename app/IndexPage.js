@@ -25,6 +25,17 @@ const IndexPage = () => {
       </div>
     </section>
 
+    <section className="section-grid pygmalios-section" aria-labelledby="pygmalios-title">
+      <div><p className="eyebrow">Data science · 2018–2021</p><h2 id="pygmalios-title">At Pygmalios</h2></div>
+      <div className="section-body">
+        <p>At Pygmalios, I led data-science work on sensor data from physical retail stores. I worked on data quality, anomaly detection, and tools for understanding shopper behavior and planning store operations.</p>
+        <div className="inline-links">
+          <Link className="text-link" to="/blogs/pygmalios-trajectory-visualisation-skeletons">Visualizing shopper trajectories <span aria-hidden="true">↗</span></Link>
+          <Link className="text-link" to="/blogs/staff-planning-presentation">Digital twins &amp; staff scheduling — talk <span aria-hidden="true">↗</span></Link>
+        </div>
+      </div>
+    </section>
+
     <section className="section-grid research-preview" aria-labelledby="research-title">
       <div><p className="eyebrow">Selected work</p><h2 id="research-title">Research</h2><p className="quiet">Industrial IoT, activity recognition, and misinformation. PhD at Aarhus University, with a research visit to Carnegie Mellon.</p><Link className="text-link" to="/research">All publications <span aria-hidden="true">↗</span></Link></div>
       <div className="section-body">

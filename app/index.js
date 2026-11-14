@@ -1,44 +1,34 @@
-const React = require('react'),
-    ReactDOM = require('react-dom'),
-
-    IndexPage = require('./IndexPage'),
-    PhdVideosPage = require('./PhDVideosPage'),
-    CVPage = require('./CVPage'),
-    PortfolioPage = require('./PortfolioPage'),
-    BlogPage = require('./BlogPage'),
-    PublicationPage = require('./PublicationPage'),
-    ARModelingPaperPage = require('./ARModelingPaperPage'),
-    ScrollToTop = require('./ScrollToTop'),
-
-    BrowserRouter = require('react-router-dom').BrowserRouter,
-    Switch = require('react-router-dom').Switch,
-    Route = require('react-router-dom').Route;
-
+const React = require('react');
+const ReactDOM = require('react-dom');
+const { BrowserRouter, Switch, Route, Link } = require('react-router-dom');
+const SiteLayout = require('./SiteLayout');
+const ScrollToTop = require('./ScrollToTop');
+const IndexPage = require('./IndexPage');
+const CVPage = require('./CVPage');
+const PortfolioPage = require('./PortfolioPage');
+const WritingPage = require('./WritingPage');
+const ResearchPage = require('./ResearchPage');
+const PhDVideosPage = require('./PhDVideosPage');
+const BlogPage = require('./BlogPage');
+const PublicationPage = require('./PublicationPage');
+const ARModelingPaperPage = require('./ARModelingPaperPage');
+const { setTitle } = require('./helpers');
 const NoMatch = () => {
-  return <div>
-    <h1>
-      404 Page not found
-    </h1>
-  </div>;
+  setTitle('Page not found');
+  return <div className="page-intro"><p className="eyebrow">404</p><h1>Nothing here.</h1><p>The link may be out of date. <Link to="/">Head back home</Link> or explore the <Link to="/writing">writing archive</Link>.</p></div>;
 };
-
-const Application = () => {
-  return <BrowserRouter>
-    <ScrollToTop>
-      <Switch>
-        <Route path='/phd/videos' component={PhdVideosPage} />
-        <Route path='/phd' component={PhdVideosPage} />
-        <Route path='/cv' component={CVPage} />
-        <Route path='/portfolio' component={PortfolioPage} />
-        <Route path='/papers/ar_modeling' component={ARModelingPaperPage} />
-        <Route path='/blogs/:blogId' component={BlogPage} />
-        <Route path='/publications/:publicationId' component={PublicationPage} />
-        <Route path='/' component={IndexPage} />
-
-        <Route path='*' component={NoMatch} />
-      </Switch>
-    </ScrollToTop>
-  </BrowserRouter>;
-};
-
+const LegacyPage = Component => props => <div className="legacy-page"><Component {...props} /></div>;
+const Application = () => <BrowserRouter><ScrollToTop><SiteLayout><Switch>
+  <Route exact path="/" component={IndexPage} />
+  <Route exact path="/cv" component={CVPage} />
+  <Route exact path="/portfolio" component={PortfolioPage} />
+  <Route exact path="/writing" component={WritingPage} />
+  <Route exact path="/research" component={ResearchPage} />
+  <Route exact path="/phd/videos" component={LegacyPage(PhDVideosPage)} />
+  <Route exact path="/phd" component={LegacyPage(PhDVideosPage)} />
+  <Route exact path="/papers/ar_modeling" component={LegacyPage(ARModelingPaperPage)} />
+  <Route exact path="/blogs/:blogId" component={LegacyPage(BlogPage)} />
+  <Route exact path="/publications/:publicationId" component={LegacyPage(PublicationPage)} />
+  <Route component={NoMatch} />
+</Switch></SiteLayout></ScrollToTop></BrowserRouter>;
 ReactDOM.render(<Application />, document.getElementById('app-container'));

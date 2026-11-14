@@ -1,49 +1,26 @@
-var fs = require('fs');
-var browserify = require('browserify');
-var watchify = require('watchify');
-
-let isDebug = !process.argv.includes('prod');
-
-if (isDebug) {
-	console.log('DEVELOPMENT');
-} else {
-	console.log('PRODUCTION');
-}
-
-var b = browserify({ debug: isDebug })
+const fs = require('fs');
+const crypto = require('crypto');
+const browserify = require('browserify');
+const watch = process.argv.includes('watch');
+const production = process.argv.includes('prod');
+const bundler = browserify({ debug: !production, cache: {}, packageCache: {} })
   .add('./app/index.js')
-  .transform('babelify', { presets: ['es2015', 'react'] })
-  .transform('uglifyify', { global: true })
-  .plugin(watchify)
-  .on('update', bundle);
-
-bundle([]);
-
-function bundle(ids) {
-  console.log();
-  console.log('+++');
-  console.log('Changed bundles: ' + ids.join(' '));
-  let timer = 'Bundling';
-  console.time(timer);
-  b.bundle()
-    .on('error', function (err) {
-      console.log(err.message);
-      console.log('---');
-      this.emit('end');
-    })
-    .on('end', () => {
-      console.timeEnd(timer);
-      console.log('---');
-
-      fs.readFile('version.txt', 'utf8', (err, data) => {
-        if (err) { return console.log(err); }
-        let version = parseInt(data);
-        version += 1;
-
-        fs.writeFile('version.txt', String(version), (err) => {
-          if (err) { return console.log(err); }
-        });
-      });
-    })
-    .pipe(fs.createWriteStream('./scripts/app.js'));
+  .transform('babelify', { presets: ['es2015', 'react'] });
+if (production) bundler.transform('uglifyify', { global: true });
+if (watch) {
+  bundler.plugin(require('watchify'));
+  bundler.on('update', bundle);
 }
+function bundle() {
+  bundler.bundle((error, buffer) => {
+    if (error) {
+      console.error(error.message);
+      if (!watch) process.exitCode = 1;
+      return;
+    }
+    fs.writeFileSync('./scripts/app.js', buffer);
+    fs.writeFileSync('./version.txt', crypto.createHash('sha256').update(buffer).digest('hex').slice(0, 12) + '\n');
+    console.log('Built scripts/app.js (' + Math.round(buffer.length / 1024) + ' KB)');
+  });
+}
+bundle();

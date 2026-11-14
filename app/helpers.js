@@ -63,7 +63,7 @@ function setTitle(title) {
   if (title) {
     document.title = title + ' | Matúš Tomlein';
   } else {
-    document.title = 'Matúš Tomlein';
+    document.title = 'Matúš Tomlein — Software engineer';
   }
 }
 

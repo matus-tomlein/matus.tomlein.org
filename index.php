@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/styles/flexboxgrid.min.css" />
-    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/index.css?v=<?php echo substr(hash_file('sha256', __DIR__ . '/styles/index.css'), 0, 12); ?>" />
 </head>
 <body>
     <div id="app-container"></div>
